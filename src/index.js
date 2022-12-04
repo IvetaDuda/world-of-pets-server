@@ -1,3 +1,5 @@
+//test
+
 const express = require('express');
 const http = require('http');
 const mongoose = require('mongoose');
@@ -10,6 +12,7 @@ const { AuthRouter, UserRouter, NoticeRouter, NewsRouter, SponsorRouter } = requ
 const app = express();
 
 /** Connect to Mongo */
+
 mongoose
   .connect(config.mongo.url)
   .then(() => {
